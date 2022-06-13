@@ -1,0 +1,103 @@
+.infoPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  width: 32rem;
+  height: 42rem;
+  border:3px solid lightblue;
+  border-radius: 2rem;
+
+  .infoHeader {
+    background-color: #1b8bec;
+    width: 90%;
+    height: 5rem;
+    color: white;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: flex;
+
+    p{
+      font-size: 2rem;
+      text-align: left;
+      top: 10px;
+      position: relative;
+    }
+
+    .left-arrow {
+      position: relative;
+      width: 4rem;
+      height: 2rem;
+      background: white;
+      top: 18px;
+      -webkit-mask: url(../../../../icon/left-arrow.svg) no-repeat center;
+      mask: url(../../../../icon/left-arrow.svg) no-repeat center;
+    }
+  }
+
+  .blockHeader {
+    background-color: #ced4da;
+    width: 90%;
+    height: 3rem;
+    color: #495057;
+
+    p{
+      font-size: 1.25rem;
+      text-align: left;
+      top: 10px;
+      margin-left: 2rem;
+      position: relative;
+    }
+  }
+
+  @mixin infoDivBase {
+    background-color: white;
+    width: 90%;
+    height: 5rem;
+    color: #495057;
+    border-bottom: #ced4da solid 1px;
+
+    p{
+      font-size: 1.25rem;
+      text-align: left;
+      top: 10px;
+      margin-left: 2rem;
+      position: relative;
+    }
+  }
+
+  .infoDiv {
+    @include infoDivBase;
+  }
+
+  .infoDivNoBorder {
+    @include infoDivBase;
+
+    border-bottom: none;
+  }
+
+  .infoDivNoBorderNoTitle {
+    @include infoDivBase;
+
+    height: 2.5rem;
+    border-bottom: none;
+  }
+
+  .infoDivBankData {
+    @include infoDivBase;
+
+    height: 7rem;
+
+    .bankAddress {
+      padding-left: 10px;
+    }
+  }
+}

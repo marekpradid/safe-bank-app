@@ -1,0 +1,30 @@
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+@import 'scss/vendor';
+@import 'scss/site';
+
+.app {
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+}
+
+// Panel content
+.panel-content {
+  h1, h2 {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// 576px, small devices
+@include media-breakpoint-up(sm) {
+  .panel-content {
+    margin-top: 1.25rem;
+  }
+}

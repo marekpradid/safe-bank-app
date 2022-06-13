@@ -1,0 +1,57 @@
+.loginNumbersPanel{
+  width: 60%;
+  height: 20rem;
+  margin-bottom: 2.5rem;
+}
+
+@mixin flexItemBase {
+  height: 4rem;
+  width: 4rem;
+
+  padding: 1rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+
+  &:hover, &:active {
+    background-color: gainsboro;
+  }
+}
+.flexItem {
+  @include flexItemBase;
+}
+
+.flexItemCancel {
+  @include flexItemBase;
+
+  width: 6rem;
+  color: deepskyblue;
+
+  &:hover, &:active {
+    background-color: #ffffff;
+    color: gainsboro;
+  }
+}
+
+.flexItemClear {
+  @include flexItemBase;
+
+  width: 6rem;
+  background: deepskyblue;
+  -webkit-mask: url(../../../../../icon/delete-number-icon.svg) no-repeat 50% 40%;
+  mask: url(../../../../../icon/delete-number-icon.svg) no-repeat 50% 40%;
+  -webkit-mask-size: 35px;
+  mask-size: 35px;
+
+  &:hover, &:active {
+    background-color: gainsboro;
+  }
+}
+
+
+
+
+
+
+

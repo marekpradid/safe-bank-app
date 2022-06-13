@@ -1,0 +1,79 @@
+@import "../../../../../scss/_custom-variables.scss";
+
+.iconsPanel{
+  width: 70%;
+  height: 4rem;
+  margin: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin iconBase {
+  position: relative; // for tooltip
+  height: 80%;
+  width: 20%;
+}
+
+.passwordIcon{
+  @include iconBase;
+
+  background: url(../../../../../icon/forgot-password.svg) no-repeat center;
+}
+
+.registrationIcon{
+  @include iconBase;
+
+  background: url(../../../../../icon/registration.svg) no-repeat center;
+}
+
+.informationIcon{
+  @include iconBase;
+
+  background: url(../../../../../icon/information.svg) no-repeat center;
+}
+
+@mixin tooltipTextBase {
+  visibility: hidden;
+  width: 125px;
+  color: #fff;
+  background-image: linear-gradient(to right, $gold-bank-light, $gold-bank-dark);
+  text-align: center;
+  border-radius: 6px;
+
+  /* Position the tooltip */
+  position: absolute;
+  top: -2rem;
+  left: -1.5rem;
+  margin: auto;
+  z-index: 1;
+}
+
+.tooltipText {
+  @include tooltipTextBase;
+}
+
+.passwordTooltipText {
+  @include tooltipTextBase;
+}
+
+.passwordIcon, .registrationIcon, .informationIcon {
+  &:hover .tooltipText {
+    visibility: visible;
+  }
+}
+
+.passwordIcon, .registrationIcon, .informationIcon {
+  &:hover .passwordTooltipText {
+    visibility: visible;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 400px) {
+  .tooltipText {
+    left: -3rem;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "telBlokingCards" : "+421 259 668 230",
+  "telAssistanceService": "+421 244 450 050",
+  "infoLinkFromSR": "0850 111 777",
+  "infoLinkFromAbroad": "+421 2 5966 8844",
+  "infoLinkEmail": "helpdesk@safebank.com",
+  "addressOfBank": {
+    "name": "Safe Bank, a.s",
+    "street": "Moskovka street 7",
+    "postalCode": "040 01",
+    "city": "Košice",
+    "state": "Slovak Republic"
+  }
+
+}

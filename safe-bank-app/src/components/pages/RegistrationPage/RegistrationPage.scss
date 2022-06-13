@@ -1,0 +1,93 @@
+@import "../../../../scss/_custom-variables.scss";
+
+.registrationPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  width: 32rem;
+  height: 43rem;
+  border:3px solid lightblue;
+  border-radius: 2rem;
+}
+
+.regTextPanel{
+  width: 65%;
+  height: 3rem;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+
+  p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.firstDiv {
+  width: 40%;
+}
+
+.secondDiv {
+  width: 40%;
+}
+
+.row {
+  width: 95%;
+
+  label{
+    width: 20%;
+  }
+
+  .subscribeLabel{
+      width: 80%;
+  }
+
+  .subscribeInput{
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.rowDiv {
+  width: 80%;
+}
+
+.custom-select {
+  display: inline-block;
+  width: 100%;
+  //height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  vertical-align: middle;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-appearance: menulist;
+  appearance: menulist-button;
+}
+
+.submitRegButton {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  width: 30%;
+
+  border-radius: 2rem;
+  background-image: linear-gradient(to right, $gold-bank-light, $gold-bank-dark);
+  border: none;
+  color: black;
+  font-size: 1.75rem;
+  font-weight: bold;
+}

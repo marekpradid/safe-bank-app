@@ -1,0 +1,19 @@
+.input-range__label--max {
+  right: 0;
+  top: 12.5rem;
+}
+.input-range__label--min, .input-range__label--max {
+  position: absolute;
+}
+.input-range__label-container {
+  left: -35%;
+  position: relative;
+}
+span.rangevalue {
+  color: #fff;
+  background: #1b8bec;
+  border-radius: 50%;
+  /* position: absolute; */
+  width: 25px;
+  padding: 6px;
+}

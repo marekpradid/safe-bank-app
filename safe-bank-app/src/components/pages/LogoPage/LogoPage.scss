@@ -1,0 +1,98 @@
+@import "../../../../scss/_custom-variables.scss";
+
+.logoPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  width: 32rem;
+  height: 35rem;
+  border:3px solid lightblue;
+  border-radius: 2rem;
+}
+
+.logoPanel{
+  width: 85%;
+  height: 18rem;
+  margin-bottom: 2.5rem;
+
+  background: url(../../../../icon/safeBankLogo.svg) no-repeat center;
+}
+
+.loginButtonPanel{
+  width: 80%;
+  height: 3.25rem;
+  margin: 0.5rem;
+
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.loginButton{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  width: auto;
+
+  border-radius: 2rem;
+  background-image: linear-gradient(to right, $gold-bank-light, $gold-bank-dark);
+  border: none;
+  color: black;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* Small screens */
+@media screen and (max-width: 400px) {
+  .logoPageContainer {
+    width: 85%;
+    height: 35rem;
+  }
+
+  .logoPanel{
+    width: 85%;
+  }
+
+  .loginButtonPanel {
+    width: 80%;
+  }
+
+  .loginButton{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 400px)  and (max-width: 600px) {
+  .logoPageContainer {
+    width: 85%;
+    height: 35rem;
+  }
+
+  .logoPageContainer {
+    width: 85%;
+    height: 35rem;
+  }
+
+  .logoPanel{
+    width: 85%;
+  }
+
+  .loginButtonPanel {
+    width: 70%;
+  }
+
+  .loginButton{
+    width: 70%;
+  }
+}
+

@@ -1,0 +1,26 @@
+.loginPinNumbersContainer{
+  width: 60%;
+  height: 5rem;
+  margin-bottom: 2.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pinNumber {
+  width: 3rem;
+  height: 4rem;
+
+  text-align: center;
+  font-size: 3rem;
+
+  //border
+  border-bottom: 3px solid #DCDCDC;
+
+  &:visited{
+    border-bottom: 3px solid #00BFFF;
+  }
+}
+
